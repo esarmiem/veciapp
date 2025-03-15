@@ -3,18 +3,12 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 export default function MessagesScreen() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
+    <SafeAreaView className="flex-1 bg-white">
       <ScrollView>
-        <View style={{ padding: 16 }}>
-          <Text style={{ fontSize: 24, fontFamily: 'Inter-Bold' }}>Mensajes</Text>
-          <View style={{ 
-            marginTop: 16,
-            padding: 16,
-            backgroundColor: '#F3F4F6',
-            borderRadius: 8,
-            alignItems: 'center'
-          }}>
-            <Text style={{ fontFamily: 'Inter-Regular' }}>No hay mensajes nuevos</Text>
+        <View className="p-4">
+          <Text className="text-2xl font-['Inter-Bold'] text-gray-900">Mensajes</Text>
+          <View className="mt-4 p-4 bg-gray-100 rounded-lg items-center">
+            <Text className="font-['Inter-Regular'] text-gray-600">No hay mensajes nuevos</Text>
           </View>
         </View>
       </ScrollView>

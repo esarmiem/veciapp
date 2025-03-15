@@ -1,34 +1,34 @@
-import { View, Text, ScrollView, TouchableOpacity, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, TouchableOpacity } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Settings, Heart, Clock, LogOut } from 'lucide-react-native';
 
 export default function ProfileScreen() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
+    <SafeAreaView className="flex-1 bg-white">
       <ScrollView>
-        <View style={{ padding: 16 }}>
-          <Text style={{ fontSize: 24, fontFamily: 'Inter-Bold' }}>Perfil</Text>
+        <View className="p-4">
+          <Text className="text-2xl font-['Inter-Bold'] text-gray-900">Perfil</Text>
           
-          <View style={{ marginTop: 24 }}>
+          <View className="mt-6">
             {/* Profile Menu Items */}
-            <TouchableOpacity style={styles.menuItem}>
+            <TouchableOpacity className="flex-row items-center py-3 border-b border-gray-200">
               <Settings size={20} color="#6B7280" />
-              <Text style={styles.menuText}>Configuración</Text>
+              <Text className="ml-3 text-base font-['Inter-Regular'] text-gray-800">Configuración</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.menuItem}>
+            <TouchableOpacity className="flex-row items-center py-3 border-b border-gray-200">
               <Heart size={20} color="#6B7280" />
-              <Text style={styles.menuText}>Favoritos</Text>
+              <Text className="ml-3 text-base font-['Inter-Regular'] text-gray-800">Favoritos</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={styles.menuItem}>
+            <TouchableOpacity className="flex-row items-center py-3 border-b border-gray-200">
               <Clock size={20} color="#6B7280" />
-              <Text style={styles.menuText}>Historial</Text>
+              <Text className="ml-3 text-base font-['Inter-Regular'] text-gray-800">Historial</Text>
             </TouchableOpacity>
             
-            <TouchableOpacity style={[styles.menuItem, styles.logoutItem]}>
+            <TouchableOpacity className="flex-row items-center py-3 border-b border-gray-200 mt-8">
               <LogOut size={20} color="#EF4444" />
-              <Text style={[styles.menuText, styles.logoutText]}>Cerrar sesión</Text>
+              <Text className="ml-3 text-base font-['Inter-Regular'] text-red-500">Cerrar sesión</Text>
             </TouchableOpacity>
           </View>
         </View>
@@ -36,25 +36,3 @@ export default function ProfileScreen() {
     </SafeAreaView>
   );
 }
-
-const styles = StyleSheet.create({
-  menuItem: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    paddingVertical: 12,
-    borderBottomWidth: 1,
-    borderBottomColor: '#E5E7EB'
-  },
-  menuText: {
-    marginLeft: 12,
-    fontSize: 16,
-    fontFamily: 'Inter-Regular',
-    color: '#1F2937'
-  },
-  logoutItem: {
-    marginTop: 32
-  },
-  logoutText: {
-    color: '#EF4444'
-  }
-});

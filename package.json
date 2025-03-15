@@ -9,12 +9,12 @@
     "lint": "expo lint"
   },
   "dependencies": {
+    "@expo-google-fonts/inter": "^0.2.3",
+    "@expo-google-fonts/poppins": "^0.2.3",
     "@expo/vector-icons": "^14.0.2",
     "@lucide/lab": "^0.1.2",
     "@react-navigation/bottom-tabs": "^7.2.0",
     "@react-navigation/native": "^7.0.14",
-    "@expo-google-fonts/inter": "^0.2.3",
-    "@expo-google-fonts/poppins": "^0.2.3",
     "expo": "52.0.33",
     "expo-blur": "^14.0.3",
     "expo-constants": "^17.0.5",
@@ -31,6 +31,7 @@
     "expo-system-ui": "^4.0.7",
     "expo-web-browser": "^14.0.2",
     "lucide-react-native": "^0.475.0",
+    "nativewind": "^2.0.11",
     "react": "18.3.1",
     "react-dom": "18.3.1",
     "react-native": "0.76.6",
@@ -48,6 +49,7 @@
   "devDependencies": {
     "@babel/core": "^7.25.2",
     "@types/react": "~18.3.12",
+    "tailwindcss": "^3.3.2",
     "typescript": "^5.3.3"
   }
 }
