@@ -4,24 +4,14 @@ import { Search } from 'lucide-react-native';
 
 export default function SearchScreen() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: '#FFFFFF' }}>
-      <View style={{ padding: 16 }}>
-        <View style={{ 
-          flexDirection: 'row',
-          alignItems: 'center',
-          backgroundColor: '#F3F4F6',
-          padding: 12,
-          borderRadius: 8,
-          marginBottom: 16
-        }}>
+    <SafeAreaView className="flex-1 bg-white">
+      <View className="p-4">
+        <View className="flex-row items-center bg-gray-100 p-3 rounded-lg mb-4 shadow-md">
           <Search size={20} color="#6B7280" />
           <TextInput
             placeholder="Buscar productos o servicios"
-            style={{ 
-              marginLeft: 8,
-              flex: 1,
-              fontFamily: 'Inter-Regular'
-            }}
+            className="flex-1 ml-2 font-['Inter-Regular']"
+            placeholderTextColor="#9CA3AF"
           />
         </View>
         {/* Add your search results content here */}
